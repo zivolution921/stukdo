@@ -37,11 +37,14 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+gem "bcrypt-ruby", "~> 3.1.1"
 
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 
 gem "font-awesome-rails"
 
 gem 'simple_form'
+
+gem 'devise'
 
 
