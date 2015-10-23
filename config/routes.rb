@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
 
 
-  resources :tasks
+  resources :tasks do
+  member do
+    put :change
+  end
+end
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
@@ -11,6 +15,7 @@ Rails.application.routes.draw do
   root 'pages#home'
 
   get 'about' => 'pages#about'
+  get 'test' => "pages#test"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
